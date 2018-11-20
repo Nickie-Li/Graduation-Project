@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+@{
+    ViewBag.Title = "Home Page";
+}
+<h2>蒸汽壓力記錄</h2>
+
+@if (Session["Account"] != null)
+{
+    <h4>Hello @Session["Account"].ToString()</h4>
+}
+
